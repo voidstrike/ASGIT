@@ -43,3 +43,13 @@ python3 train_attn.py --netG resnet_9blocks --netD trainable_attn_v2 --model att
 - Test a model
 Just use the same command in the previous part and replace `train_attn.py` with `test.py`.
 
+### Results
+We provide some translation results of our model.
+
+### SCENERY 
+<img src='imgs/scene.png'>
+
+### OBJECT
+<img src='imgs/object.png'>
+
+

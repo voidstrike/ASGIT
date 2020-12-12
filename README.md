@@ -26,9 +26,9 @@ For CONDA users, you can use script `./scripts/conda_dep.sh` to install pytorch 
 
 Cityscapes dataset can be downloaded from [Cityscapes](https://www.cityscapes-dataset.com). You must register an account to access and download the dataset.
 
-ImageNet based datasets like apple2orange, horse2zebra, etc can be downloaded using `./scripts/download_cyclegan_model.sh`
+ImageNet based datasets like apple2orange, horse2zebra, etc can be downloaded using `./scripts/download_cyclegan_model.sh`.
 
-Day2Night dataset can be downloaded from [Day2Night](https://drive.google.com/file/d/1lU3Tmzkhp3TOeosZGpjNMGkrWNdtrjHa/view?usp=sharing). Noted that those street images are cropped from [BDD100K](https://bair.berkeley.edu/blog/2018/05/30/bdd/) dataset
+Day2Night dataset can be downloaded from [Day2Night](https://drive.google.com/file/d/1lU3Tmzkhp3TOeosZGpjNMGkrWNdtrjHa/view?usp=sharing). It's worth noting that those street images are cropped from [BDD100K](https://bair.berkeley.edu/blog/2018/05/30/bdd/) dataset.
 
 ### Run Experiments
 
@@ -60,9 +60,9 @@ We provide some translation results of our model.
 ### OBJECT
 <img src='imgs/object.png'>
 
-### Citation
+## Citation
 
-If you use this code or dataset for your research, please cite our paper:
+If you use this code or dataset for your research, please consider cite our paper:
 
 PENDING.
 

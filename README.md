@@ -1,7 +1,7 @@
 # Attention-Based Spatial Guidance for Image-to-Image Translation
 
-This repo contains the PyTorch implementation of ["Attention-Based Spatial Guidance for Image-to-Image Translation"](https://openaccess.thecvf.com/content/WACV2021/papers/Lin_Attention-Based_Spatial_Guidance_for_Image-to-Image_Translation_WACV_2021_paper.pdf) (WACV 2021).
-The implementation is based on the official [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) code.
+This repo contains the PyTorch implementation of ["Attention-Based Spatial Guidance for Image-to-Image Translation"](https://openaccess.thecvf.com/content/WACV2021/papers/Lin_Attention-Based_Spatial_Guidance_for_Image-to-Image_Translation_WACV_2021_paper.pdf) (WACV 2021).\
+This implementation is based on the official [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) code.\
 Our model and contributions are in `./models/attn_cycle_gan_model.py` and  `./models/attn_cycle_gan_v2_model.py`, respectively.
 
 <img src='imgs/motivation.png'>

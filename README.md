@@ -1,6 +1,6 @@
 # Attention-Based Spatial Guidance for Image-to-Image Translation
 
-This repo contains the PyTorch implementation of ["Attention-Based Spatial Guidance for Image-to-Image Translation"]() (WACV 2021).
+This repo contains the PyTorch implementation of ["Attention-Based Spatial Guidance for Image-to-Image Translation"](https://openaccess.thecvf.com/content/WACV2021/papers/Lin_Attention-Based_Spatial_Guidance_for_Image-to-Image_Translation_WACV_2021_paper.pdf) (WACV 2021).
 The implementation is based on the official [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) code.
 Our model and contributions are in `./models/attn_cycle_gan_model.py` and  `./models/attn_cycle_gan_v2_model.py`, respectively.
 
@@ -28,7 +28,7 @@ Cityscapes dataset can be downloaded from [Cityscapes](https://www.cityscapes-da
 
 ImageNet based datasets like apple2orange, horse2zebra and *.etc* can be downloaded using `./scripts/download_cyclegan_model.sh`.
 
-Day2Night dataset can be downloaded from [Day2Night](https://drive.google.com/file/d/1lU3Tmzkhp3TOeosZGpjNMGkrWNdtrjHa/view?usp=sharing). Please note that those street images are cropped from [BDD100K](https://bair.berkeley.edu/blog/2018/05/30/bdd/) dataset.
+Day2Night dataset can be downloaded from [here](https://drive.google.com/file/d/1lU3Tmzkhp3TOeosZGpjNMGkrWNdtrjHa/view?usp=sharing). Please note that those street images are cropped from [BDD100K](https://bair.berkeley.edu/blog/2018/05/30/bdd/) dataset.
 
 ### Run Experiments
 
@@ -40,7 +40,8 @@ python3 train_attn.py --netG resnet_9blocks --netD trainable_attn --model attn_c
 python3 train_attn.py --netG resnet_9blocks --netD trainable_attn_v2 --model attn_cycle_gan_v2 --concate alpha --dataroot DATASETPATH --name EXP_NAME
 ```
 - There are more hyper parameter options, please refer to the source code for more detail.
-- To view training results and and log plots, please run `python -m visdom.server` and go to URL http://localhost:8097.
+- Please modify DATASETPATH and EXP_NAME accordingly.
+- To view training results and log plots, please run `python -m visdom.server` and go to URL http://localhost:8097.
 - To see more intermediate results, check out `./checkpoints/EXP_NAME/web/index.html`
 
 - Test a model (Please make sure --netG, --netD, --model and --concat are consistent with the training command)
@@ -51,7 +52,7 @@ python3 test.py --netG resnet_9blocks --netD trainable_attn --model attn_cycle_g
 python3 test.py --netG resnet_9blocks --netD trainable_attn_v2 --model attn_cycle_gan_v2 --concate alpha --dataroot DATASETPATH
 ```
 
-### Results
+## Results
 We provide some translation results of our model.
 
 ### SCENERY 
@@ -64,7 +65,16 @@ We provide some translation results of our model.
 
 If you use this code or dataset for your research, please consider cite our paper:
 
-PENDING.
+```
+@InProceedings{Lin_2021_WACV,
+    author    = {Lin, Yu and Wang, Yigong and Li, Yifan and Gao, Yang and Wang, Zhuoyi and Khan, Latifur},
+    title     = {Attention-Based Spatial Guidance for Image-to-Image Translation},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2021},
+    pages     = {816-825}
+}
+```
 
 
 

@@ -76,5 +76,10 @@ If you use this code or dataset for your research, please consider cite our pape
 }
 ```
 
+## Update
+### 2021-06-03
+- For parameter `--netD`, a specified network without suffix `_v2` (e.g. `posthoc_attn`) means the attention mask will be normalized into [0, 1]. Thus, a model name w/ and w/o the `_v2` suffix are exchangable;
+- There is a missing parameter: please adjust `--mask_size IMG_SIZE` to the shape of your input;
+- If your dataset has more than 3000 images, please adjust L57 of `attn_cycle_gan_model.py` accordingly
 
 
